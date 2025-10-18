@@ -1,3 +1,19 @@
+# wintab-proxy
+
+This is a fork of [wintab-interposer](https://github.com/jchv/wintab-interposer) by [jchv](https://github.com/jchv)
+that removes all the coolest parts of the original project and only leaves the library proxying part.
+
+It serves as a temporary workaround for [some apps](https://github.com/stopperw/pain-studio-mask/issues/1)
+that don't want to play nicely with [Pain Studio Mask](https://github.com/stopperw/pain-studio-mask) directly.
+
+## Usage with PSM
+
+1. Download this from [releases](https://github.com/stopperw/wintab-proxy/releases/latest)
+2. Copy the DLL for the correct app architecture next to its executable
+3. Rename PSM's DLL to `wintab32_real.dll`
+
+Original README:
+
 # Wintab-Interposer
 This is a quick'n'dirty library that sits between wintab32.dll and logs all of the API calls, so that you can examine a program's Wintab usage. It is ultimately based on generated code from Winedump, though it is standalone and only needs MinGW-w64 to compile.
 
